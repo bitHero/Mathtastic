@@ -5,4 +5,8 @@ body {
 
 #math-input {
     font-family: 'Source Code Pro', 'Andale Mono', 'Menlo', monospace;
+    font-size: 12px;
+}
+#math-preview {
+
 }
