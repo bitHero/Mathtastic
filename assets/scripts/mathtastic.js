@@ -2,7 +2,6 @@ function init() {
     var input = $("#math-input");
     var math = $("#math-preview");
 
-    console.log(input);
     input.on('input selectionchange propertychange', function (){
         reprocess();
     });
@@ -23,6 +22,16 @@ function init() {
             }
         }
     }
+
+    $("#svg-to-clipboard").click(function(){
+
+        domtoimage.toSvg(math.find(".katex-html")[0])
+            .then(function (dataUrl) {
+                var img = new Image();
+                img.src = dataUrl;
+                math.append(img);
+            })
+    });
 }
 
 

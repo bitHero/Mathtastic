@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/styles/katex.min.css"/>
     <script src="assets/scripts/jquery.min.js"></script>
     <script src="assets/scripts/katex.min.js"></script>
+    <script src="assets/scripts/dom-to-image.js"></script>
     <script src="assets/scripts/semantic.js"></script>
     <script src="assets/scripts/mathtastic.js"></script>
 </head>
@@ -24,6 +25,14 @@
                           placeholder="Enter your equation here"
                           spellcheck="false"></textarea>
             </div>
+        </div>
+        <div class="ui left labeled button" tabindex="0">
+            <a class="ui basic label">
+                SVG
+            </a>
+            <button id="svg-to-clipboard" class="ui icon button">
+                <i class="clipboard icon"></i>
+            </button>
         </div>
     </div>
     <div class="middle aligned center aligned column">
