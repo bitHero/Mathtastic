@@ -26,19 +26,23 @@
                           spellcheck="false"></textarea>
             </div>
         </div>
-        <div class="ui left labeled button" tabindex="0">
-            <a class="ui basic label">
-                SVG
-            </a>
-            <button id="svg-to-clipboard" class="ui icon button">
-                <i class="clipboard icon"></i>
-            </button>
-        </div>
     </div>
-    <div class="middle aligned center aligned column">
-        <div id="math-preview">
-            <span id="math-placeholder">Equation Preview</span>
+    <div class="column">
+        <div class="ui middle aligned center aligned grid preview">
+            <div class="sixteen column wide">
+                <div id="math-preview">
+                    <span id="math-placeholder">Equation Preview</span>
+                </div>
+            </div>
         </div>
+        <button id="to-svg" class="ui labeled icon button">
+            <i class="file code outline icon"></i>
+            SVG
+        </button>
+        <button id="to-png" class="ui labeled icon button">
+            <i class="file image outline icon"></i>
+            PNG
+        </button>
     </div>
 </div>
 </body>

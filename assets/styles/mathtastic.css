@@ -1,12 +1,17 @@
 body {
     padding: 10px;
     min-width: 640px;
+    height: 180px;
 }
 
 #math-input {
     font-family: 'Source Code Pro', 'Andale Mono', 'Menlo', monospace;
     font-size: 12px;
+    height: 156px;
 }
 #math-preview {
-
+    font-size: 20px;
+}
+.preview {
+    height: 148px;
 }

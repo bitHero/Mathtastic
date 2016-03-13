@@ -23,15 +23,31 @@ function init() {
         }
     }
 
-    $("#svg-to-clipboard").click(function(){
+    $("#to-svg").click(function(){
+        EquationToSVG();
+    });
 
+    function EquationToSVG(){
         domtoimage.toSvg(math.find(".katex-html")[0])
             .then(function (dataUrl) {
                 var img = new Image();
                 img.src = dataUrl;
-                math.append(img);
+                math.html(img);
             })
+    }
+
+    $("#to-png").click(function(){
+        EquationToPNG();
     });
+
+    function EquationToPNG(){
+        domtoimage.toPng(math.find(".katex-html")[0])
+            .then(function (dataUrl) {
+                var img = new Image();
+                img.src = dataUrl;
+                math.html(img);
+            })
+    }
 }
 
 
