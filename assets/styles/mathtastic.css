@@ -14,8 +14,7 @@ body {
 }
 #math-placeholder {
     font-size: 12px;
-    font-weight: bold;
-    color: #efefef;
+    color: #ccc;
 }
 .preview {
     height: 148px;
