@@ -1,0 +1,8 @@
+body {
+    padding: 10px;
+    min-width: 640px;
+}
+
+#math-input {
+    font-family: 'Source Code Pro', 'Andale Mono', 'Menlo', monospace;
+}

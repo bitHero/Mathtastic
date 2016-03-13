@@ -8,11 +8,29 @@
 <head>
     <title>Getting Started Extension's Popup</title>
     <link rel="stylesheet" href="assets/styles/semantic.css"/>
+    <link rel="stylesheet" href="assets/styles/mathtastic.css"/>
+    <link rel="stylesheet" href="assets/styles/katex.min.css"/>
     <script src="assets/scripts/jquery.min.js"></script>
+    <script src="assets/scripts/katex.min.js"></script>
     <script src="assets/scripts/semantic.js"></script>
+    <script src="assets/scripts/mathtastic.js"></script>
 </head>
 <body>
-<div id="status">Hello World!</div>
+<div class="ui grid">
+    <div class="eight wide column">
+        <div class="ui form">
+            <div class="field">
+                <label for="math-input"></label>
+                <textarea id="math-input"
+                          placeholder="Enter your equation here"
+                          spellcheck="false"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="eight wide column">
+        <div id="math-preview"></div>
+    </div>
+</div>
 </body>
 </html>
 
