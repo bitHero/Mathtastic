@@ -12,6 +12,11 @@ body {
 #math-preview {
     font-size: 20px;
 }
+#math-placeholder {
+    font-size: 12px;
+    font-weight: bold;
+    color: #efefef;
+}
 .preview {
     height: 148px;
 }
